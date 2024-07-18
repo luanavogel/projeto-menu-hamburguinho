@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Gol pela América do Sul</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>De Gol pela América do Sul: Rotas e Descobertas</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Norte Argentina</a></li>
+                <li><a href="#">Deserto do Atacama</a></li>
+                <li><a href="#">Patagônia Argentina</a></li>
+                <li><a href="#">Mendoza</a></li>
+                <li><a href="#">Planos Futuros</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Como tudo começou...</h2>
+            <p>O ano era 2022. No dia 11 de setembro, embarcávamos em uma aventura que mudaria nossas vidas e nossa visão de mundo para sempre. Sem experiência prévia, apenas com um pouco de pesquisa em canais do YouTube, ajuda do Google Maps e uma dose extra de coragem, decidimos começar a explorar a América do Sul de carro. Era o início de uma jornada emocionante, cheia de descobertas e momentos inesquecíveis a bordo do nosso Gol 1.0.</p>
+            <p>Nossa primeira viagem nos levou à deslumbrante região norte da Argentina. Embora tivéssemos um destino em mente, optamos por deixar o caminho em aberto, permitindo-nos ser guiados pelas surpresas que encontraríamos ao longo do trajeto. Exploramos boa parte da Ruta 40, uma das estradas mais belas do mundo e amada pelos viajantes por cortar a Argentina de norte a sul, seguindo paralelamente à Cordilheira dos Andes. Conhecemos as montanhas coloridas de Purmamarca e Humahuaca com suas surpreendentes 14 cores, além das impressionantes Salinas Grandes, o segundo maior deserto de sal do mundo, onde o branco do chão contrasta com o azul do céu de forma mágica. Também passamos pela pitoresca região de Cafayate, famosa por suas vinícolas e paisagens deslumbrantes.</p>
+            <p>A aventura continuou pelas paisagens surreais do Deserto do Atacama no Chile, onde testemunhamos os jatos de vapor dos gêiseres dançando ao nascer do sol e contemplamos lagunas salpicadas de flamingos cor-de-rosa. Desafiando a aridez do deserto e os efeitos da altitude em nossos corpos, escalamos um vulcão ativo, o Láscar, imaginando a terra fervilhante abaixo de nós enquanto subíamos à sua cratera. Exploramos lagoas de sal no meio do deserto, cada uma com cores difíceis de acreditar sem ver com os próprios olhos, e admiramos lagoas altiplânicas que refletiam as montanhas ainda nevadas do inverno. Concluímos nossa primeira aventura realizando mais um sonho: conhecendo o Oceano Pacífico.</p>
+            <figure>
+                <img src="imagens/lagunasaltiplanicas.jpg">
+                <figcaption>Lagunas Altiplânicas no Deserto do Atacama em setembro de 2022</figcaption>
+            </figure> 
+            <p>Encaramos estradas sinuosas e paisagens de tirar o fôlego, mergulhando de cabeça na cultura e na beleza natural dessas regiões únicas. Foi aqui que descobrimos o verdadeiro significado da liberdade de viajar com flexibilidade, abraçando cada desvio e descoberta ao longo do caminho.</p>
+            <p>De lá para cá, cada estrada se tornou uma nova página em nossa história de viajantes. Em nossa segunda viagem, encaramos as alturas vertiginosas da Patagônia Argentina, onde fizemos trekkings de longa duração por montanhas nevadas em El Chaltén, a capital nacional do trekking. Andamos sobre o imponente Glaciar Perito Moreno, e bebemos água dele. Conhecemos o gélido mar Patagônico. E nos maravilhamos com a abundante vida selvagem. Enfrentamos os temidos "70 Malditos", um trecho desafiador da estrada, e seguimos adiante, encantados quando a neve aparecia para embelezar nosso trajeto.</p>
+            <p>Perdidos na imensidão da paisagem, nos tornamos um com a natureza, seguindo trilhas sinuosas entre picos nevados, explorando bosques antigos e testemunhando a grandiosidade da Cordilheira que se estendia até o horizonte. Terminamos nossa segunda jornada conhecendo mais uma belíssima estrada, a Ruta 7, em Mendoza, que nos levou até o pico mais alto das Américas, o lendário Aconcágua.</p>
+            <figure>
+                <img src="imagens/elchalten.jpg">
+                <figcaption>Entrada do Parque Nacional Los Glaciares em El Chaltén em novembro de 2023</figcaption>
+            </figure>   
+            <p>Cada destino nos presenteou com aventuras inesquecíveis e momentos de conexão profunda. E enquanto olhamos para o futuro, ansiosos por novas aventuras, sabemos que foi aquele primeiro passo que nos trouxe até aqui.</p>
+            <p>Navegue pelo menu desta página e permita-se viajar conosco através de cada história, sentindo a emoção de estar lá e vibrar junto conosco em cada descoberta.</p>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> De Gol pela América do Sul. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = "block"
+            }
+        }
+
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
